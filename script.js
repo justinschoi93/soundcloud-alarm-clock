@@ -9,4 +9,5 @@
 // - Music Player
 // - Alarm 
 
-
+date = Date();
+console.log(date);

@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoundCloud Alarm Clock</title>
+    <link rel = "icon" href = "./images/favicon.png">
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <header class = "header header-container" id = "header-container">
         <img class = "header logo-display" id = "logo-display" placeholder = "logo"/>
-        <div class = "header time-display" id = "time-display"> Time Display </div>
+        <div class = "header time-display" id = "time-display">
+            <div class = "clock-container">
+                <div class = "time-display" id="time-display"></div>
+            </div> 
+        </div>
         <button class = "header auth-button" id = "auth-button">Login</button>
     </header>
 
@@ -29,6 +34,7 @@
             <a href="https://soundcloud.com/hurricane-kid/sets/sidney-charles-fargo-ep-relief" title="Sidney Charles - Fargo EP |RELIEF|" target="_blank" style="color: #cccccc; text-decoration: none;"> Sidney Charles - Fargo EP |RELIEF| </a>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js" type="module"></script> 
 </body>
 </html>

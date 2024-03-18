@@ -1,0 +1,33 @@
+* {
+}
+
+body {
+    background-color: #ffae66;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7700;
+    color: #fff;
+    padding: 20px;
+}
+
+.time-display {
+    color: black;
+}
+
+.logo-display {
+
+}
+
+.auth-button {
+    padding: 10px 20px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+/* .clock-container:  */

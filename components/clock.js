@@ -26,4 +26,4 @@ function clock () {
     // $("#second").css("transform", `rotate(${s * 6}deg)`);
 }
 
-module export { clock };
+export { clock };

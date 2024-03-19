@@ -1,33 +1,36 @@
+import { clock } from './components/clock.js';
+
+const theWidget = document.getElementById('the-widget'); 
 const searchBar = document.getElementById('search-bar');
-function clock () {
-    const date = new Date();
-    let h = date.getHours();
-    const m = date.getMinutes();
-    const s = date.getSeconds();
-    let ampm = 'am';
-    
-    
-    if (h > 12) {
-        h -= 12;
-        ampm = "pm";
-    } else if ( h === 0) {
-        h = 12;
-    }
-
-    // const hPadded = (h < 10) ? "0" + h : h;
-    const mPadded = (m < 10) ? "0" + m : m;
-    const sPadded = (s < 10) ? "0" + s : s;
-
-    // Digital
-    $("#time-display").text(`${h}:${mPadded}:${sPadded} ${ampm}`);
-
-    // Analog
-    // $("#hour").css("transform", `rotate(${h * 30 + m / 2}deg)`);
-    // $("#minute").css("transform", `rotate(${m * 6}deg)`);
-    // $("#second").css("transform", `rotate(${s * 6}deg)`);
+const shuffleButton = document.getElementById('shuffle-button');
+//
+//
+//
+//
+//
+//
+    shuffleButton.addEventListener('click', shuffle);
+//
+//
+//  Functions
+//
+//
+function shuffle () {
+    const trackID = Math.floor(Math.random( ) * 100000000)
+    theWidget.src=`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${trackID}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true`
 }
 
+
+
+
+
+
+
 $(document).ready(function () {
-    setInterval(updateClock, 1000);
+    
+    setInterval(clock, 1000);
     clock();
 });
+
+
+

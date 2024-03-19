@@ -11,38 +11,47 @@
 <body>
     <header class = "header header-container" id = "header-container">
         <img class = "header logo-display" id = "logo-display" placeholder = "logo" src = "./images/logo.svg"/>
-        <div class = "header search-bar search-bar-container" id = "search-bar-container"> 
-            <form class = "header search-bar search-bar-form">
-                <input class = "header search-bar" id = "search-bar" type = "text" placeholder = "to change alarm, paste link here">
-                <button class = "header search-bar" id = "search-button" >
-                    <!-- <img src="./images/logo.png"> -->
-                    <span class = "ui-icon ui-icon-search"></span>
-                </button>
-            </form>
-        </div>
+        
         <!-- <button class = "header auth-button" id = "auth-button">Login</button> -->
     </header>
     
-    <section class = "main-content">
-        <div class = "header time-display" id = "time-display">
-            <div class = "time-display" id="time-display"></div>
+    <section class = "main" id = "main-container">
+        <div id = "clock">
+            <div class = "time-display time-display-container" id = "time-display-container">
+                <p class = "time-display" id="time-display"></p>
+            </div>
+            <div class = "alarm-display alarm-display-container" id = "alarm-display-container">
+                <p class = "alarm-display" id = "alarm-display">5:31:20 am</p>
+                <button id = "set-alarm-button">Set Alarm</button>
+            </div>
         </div>
-        <iframe id = "the-widget" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/337116617&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+        <div class = "search-bar-container" id = "search-bar-container"> 
+            <form class = "search-bar-form">
+                <input class = "search-bar" id = "search-bar" type = "text" placeholder = "to change alarm, paste link here">
+                <button class = "search-bar-button" id = "search-button" >
+                    <img src="./images/soundcloud-button.png">
+                </button>
+            </form>
+        </div>
+        <iframe id = "the-widget" width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1795701588&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
         </iframe>
-        <button class = "button shuffle-button" id = "shuffle-button">
+        <!-- <button class = "button shuffle-button" id = "shuffle-button">
             <img class = "ui-icon ui-icon-shuffle">
-        </button>
+        </button> -->
         <!-- <iframe width="100%" height="600" scrolling="no" frameborder="no" allow="autoplay" 
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/337116617&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
         </iframe> -->
         <!-- <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fjfrogchoi&color=orange_white&size=32" style="width: 32px; height: 32px;"></iframe> -->
     </section>
     <footer>
-        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/hurricane-kid" title="Sidney Charles" target="_blank" style="color: #cccccc; text-decoration: none;">Sidney Charles</a> · <a href="https://soundcloud.com/hurricane-kid/sidney-charles-fargo-original-mix-relief" title="Sidney Charles - Fargo (Original Mix) |RELIEF|" target="_blank" style="color: #cccccc; text-decoration: none;">Sidney Charles - Fargo (Original Mix) |RELIEF|</a></div>
+        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/jfrogchoi" title="j!" target="_blank" style="color: #cccccc; text-decoration: none;">j!</a> · <a href="https://soundcloud.com/jfrogchoi/sets/rise-n-shine" title="Rise n&#x27; Shine!" target="_blank" style="color: #cccccc; text-decoration: none;">Rise n&#x27; Shine!</a></div>    
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="script.js" type="module"></script> 
 </body>
 </html>
+
+<iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="
+"></iframe>

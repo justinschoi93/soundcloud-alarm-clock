@@ -7,9 +7,11 @@ function clock () {
 
     // Programming set alarm button
     setAlarmButton.addEventListener('click', () => {
-        const userInput = prompt(`Set alarm time as HH:mm:ss am/pm`)
-        if (userInput) {
-            alarmDisplay.textContent = userInput};
+        // const userInput = prompt(`Set alarm time as HH:mm:ss am/pm`)
+        // if (userInput) {
+        //     alarmDisplay.textContent = userInput};
+
+        alarmDisplay.textContent = `${h}:${mPadded}:${parseInt(sPadded + 5)} ${ampm}`
         }
     )
     

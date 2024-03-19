@@ -1,12 +1,8 @@
 # SoundCloudAlarmClock
 
-Landing Page
-- Login/Logout button
-- Clock
 
-Dashboard
-- Timezone select menu
-- Playlist select menu
-- Track select menu
-- Music Player
-- Alarm 
+
+Features
+    alarm
+    copy pasta link to change song
+    set up playlist

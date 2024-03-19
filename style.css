@@ -7,6 +7,9 @@ body {
 
 .header-container {
     display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     width: 100%;
     height: 46px;
@@ -16,35 +19,40 @@ body {
 
 
 .logo-display {
-    padding: 10px;
-    /* width: 100px; */
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    width: 100px;
 }
 
 #search-bar-container {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 #search-bar-form {
-    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: calc(100% + 50px);
 }
 
 #search-bar {
-    width: 100%;
     box-sizing: border-box;
-    padding-right: 40px;
-    height: 20px;
-    align-items: center;
+    width: 100%;
+    padding-right: 100px;
+    /* height: 25px; */
 }
 
 #search-button {
     position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
+    /* right: 0; */
+    align-self: center;
     border: none;
-    background: transparent;
+    background: none;
     cursor: pointer;
-    padding: 0 10px;
 }
 
 .time-display {

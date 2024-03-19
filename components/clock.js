@@ -1,4 +1,3 @@
-const searchBar = document.getElementById('search-bar');
 function clock () {
     const date = new Date();
     let h = date.getHours();
@@ -27,7 +26,4 @@ function clock () {
     // $("#second").css("transform", `rotate(${s * 6}deg)`);
 }
 
-$(document).ready(function () {
-    setInterval(updateClock, 1000);
-    clock();
-});
+module export { clock };
